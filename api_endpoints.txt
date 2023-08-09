@@ -1,0 +1,23 @@
+Endpoints of this API:
+
+Create prompt:
+
+	POST http://127.0.0.1:5000/api/gpt/query/createprompt
+	
+	payload: body > raw > JSON > {"input": "what is beam search"}
+
+Update prompt:
+
+	PUT http://127.0.0.1:5000/api/gpt/update/1/what is beam_search?
+	
+	Note:-  1: prompt_index, new_prompt: what is beam_search?
+
+Del prompt: 
+
+	DELETE http://127.0.0.1:5000/api/gpt/delete?prompt_index=1
+
+Get ChatGPT response:
+	
+	GET http://127.0.0.1:5000/api/chat/query?prompt_index=0
+	
+	Note: Query param: prompt_index
